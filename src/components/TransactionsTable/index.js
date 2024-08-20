@@ -36,9 +36,10 @@ function TransactionsTable({transactions,addTransaction,fetchTransactions}) {
     {
       title: "Type",
       dataIndex: "type",
-      key: "type",
+      key: "type", 
     }
   ];
+  
 
   let filteredTransactions= transactions.filter((item)=>item.name.toLowerCase().includes(search.toLowerCase()) && (item.type ? item.type.includes(typeFilter):true));
 
