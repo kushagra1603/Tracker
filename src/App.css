@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   width: 60vw;
-  height: 100vh ;
+  height: 90vh ;
   margin-left: 0;
   padding: 0 5%;
   
@@ -15,7 +15,7 @@
   background-color:rgb(240, 240, 233);
   animation: scrollBackground 10s ease-in-out infinite;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   box-sizing: border-box;
 }
 @keyframes scrollBackground {
@@ -42,6 +42,7 @@
   .container-2 {
     flex-direction: column; 
     margin-left: 0;
+    height: 100%;
   }
 }
 
@@ -49,7 +50,7 @@
   overflow: hidden; 
 }
 .text-container{
-  height: 100vh;
+  height: 90vh;
   width: 50%;
   display: flex;
   justify-content: flex-start;

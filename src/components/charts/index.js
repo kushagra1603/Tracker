@@ -1,5 +1,5 @@
 import React from 'react'
-import { Line, Pie } from '@ant-design/charts';
+import { Bar, Pie } from '@ant-design/charts';
 import "./styles.css";
 function ChartComponent({transactions}) {
   const data = transactions.map((item)=>{
@@ -15,14 +15,15 @@ function ChartComponent({transactions}) {
 
   const config = {
     data:data,
-    autofit: true,
+  
     xField: 'date',
-    yField: 'amount',
-   
+    yField: 'amount',    
+    legend: { position: 'top-left' },
   };
   const spendingconfig = {
     data:spendingdata,
-    autofit: true,
+    radius: 1, // Adjust the size of the donut
+    innerRadius: 0.6,
     angleField:"amount",
     colorField:"tag",
    
@@ -32,11 +33,11 @@ function ChartComponent({transactions}) {
   return (
     <div style={{display:"flex", justifyContent:"space-around", flex:"1",width: '100%', height: '500px'}}>
   <div className='charts-wrapper'>
-    <h4>Your Analytics</h4>
-    <Line {...config} onReady={(chartInstance)=>(chart=chartInstance)}/>
+    <h2>Your Analytics</h2>
+    <Bar {...config} onReady={(chartInstance)=>(chart=chartInstance)}/>
   </div>
    <div visible className='charts-wrapper-pie'>
-   <h4>Your Spendings</h4>
+   <h2>Your Spendings</h2>
    <Pie {... spendingconfig} onReady={(chartInstance)=>(pichart=chartInstance)}/>
  </div>
  </div>

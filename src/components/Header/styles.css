@@ -10,6 +10,8 @@
   top: 0;
   left: 0;
   z-index: 1000;
+  box-sizing: border-box; 
+  overflow: hidden; /* Prevents overflow */
  
 }
 .logo{
@@ -21,20 +23,18 @@
   align-items: center;
 }
 .link{
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 500;
   opacity: 0.8;
   cursor: pointer;
-  margin-right:2.5rem;
+  margin-right: 2.25rem;
+  box-sizing: content-box;
+
 }
 .link:hover{
   opacity: 1;
-  transition: all 0.3s;
-  font-size: 17.2px;
-  font-weight: 550;
-  border-bottom: solid;
-  border-width: 2.5px;
-  border-bottom-color: rgb(230, 19, 19) ;
+  transition: all 0.2s;
+ 
 }
 .logo-image{
   margin: 0;

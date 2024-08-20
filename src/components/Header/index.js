@@ -38,7 +38,7 @@ function Header() {
 
 <p className='logo'><div className='logo-image'><img src={coin} style={{height:"2.5rem",width:"2.8rem",borderRadius:"50%",margin:"0px"}}/></div>FinanceX.</p>
 
-      <div style={{display: "flex", alignItems:"center", gap:"0.1rem"} }> 
+      <div style={{display: "flex", alignItems:"center", justifyContent:"center", justifyContent:"space-evenly"} }> 
 
       {user && <p className={'logo link'}  onClick={() => navigate('/dashboard')}>
         <span style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
