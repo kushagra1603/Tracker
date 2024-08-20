@@ -4,7 +4,7 @@
   height: auto;
   box-shadow: var(--shadow-box);
   border-radius: 0.75rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
   background: rgb(252, 251, 250);
   transform: scale(0.5); /* Start with a smaller scale */
   animation: popup 0.5s ease-in-out forwards;

@@ -5,9 +5,7 @@ import Signup from "./pages/Signup";
 import Analysis from './components/analysis';
 import { ToastContainer, toast } from 'react-toastify';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-
-
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <>
