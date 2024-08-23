@@ -280,13 +280,14 @@ function Dashboard()
       handleBorrowCancel={handleBorrowCancel}
       onFinishlentandborrow={onFinishlentandborrow}>
     </AddBorrowModal>
-
+    <div style={{width: '95%', margin: '1.5rem'}}> 
     {
-    transactions.length > 0 ?(
+    transactions.length > 0 && (
     <ChartComponent transactions={sortedTransactions}/>)
-    :(<NoTransactions/>)
-    }   
+    }
+     
     <TransactionsTable transactions={transactions} addTransaction={addTransaction} fetchTransactions={fetchTransactions}/>
+    </div> 
     </>)}
     </div>
   )

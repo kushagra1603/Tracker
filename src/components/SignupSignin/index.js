@@ -9,8 +9,10 @@ import { auth,db, provider } from '../../firebase';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { getDoc } from 'firebase/firestore';
 import { doc, setDoc } from "firebase/firestore";
+import { useTheme } from '../../context/ThemeContext';
 
 function SignupSigninComponent() {
+const { theme } = useTheme();
 const[name,setName]=useState("");
 const[password,setPassword]=useState("");
 const[email,setEmail]=useState("");
@@ -168,7 +170,7 @@ function googleAuth()
 
       <Button 
       disabled={loading}
-      text={loading?"loading....":"Login using Email and Password"} onClick={loginUsingEmail}/> 
+      text={loading?"loading....":"Login"} onClick={loginUsingEmail}/> 
 
       <p style={{textAlign:"center"}}>or</p>
 
@@ -209,7 +211,7 @@ function googleAuth()
 
       <Button 
       disabled={loading}
-      text={loading?"loading....":"Signup using Email and Password"} onClick={signupWithEmail}/> 
+      text={loading?"loading....":"Signup"} onClick={signupWithEmail}/> 
 
       <p style={{textAlign:"center"}}>or</p>
 

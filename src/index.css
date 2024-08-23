@@ -33,3 +33,17 @@ input {
   color: gray;
   font-size: 0.85rem;
 }
+
+/* Default Light Theme Variables */
+:root {
+  --card-background-light: #ffffff; /* Light background */
+  --text-color-light: #000000; /* Dark text */
+  --background-light: #f0f0f0; /* Light background for rows */
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+  --card-background-dark: #333333; /* Dark background */
+  --text-color-dark: #ffffff; /* Light text */
+  --background-dark: #1a1a1a; /* Light black background for rows */
+}

@@ -14,6 +14,8 @@ function Cards({showExpenseModal, showIncomeModal,income,expense,totalBalance,re
         <Card className='my-card' title="Current Balance"><p>₹{totalBalance}</p>
         <Button text="Reset Balance" blue={true} onClick={handleClick}/>
         </Card>
+        </Row>
+        <Row className='my-row'>       
         <Card className='my-card' title="Total Income"><p>₹{income} </p>
         <Button text="Add Income" blue={true} onClick={showIncomeModal}/>
         </Card>

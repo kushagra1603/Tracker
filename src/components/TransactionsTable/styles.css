@@ -1,20 +1,47 @@
+
+/* General Variables */
+:root {
+  --background: #ffffff;  /* Light theme background */
+  --text-color: #000000;  /* Light theme text color */
+  --border-color: rgba(128, 128, 128, 0.5); /* Light theme border color */
+  --highlight-color: #000000; /* Light theme heading line color */
+  --dropdown-background: #ffffff; /* Light theme dropdown background */
+  --dropdown-text: #000000; /* Light theme dropdown text color */
+  --placeholder-color: rgba(0, 0, 0, 0.5); /* Light theme placeholder color */
+}
+
+body.dark-mode {
+  --background: #333333;  /* Dark theme background */
+  --text-color: #ffffff;  /* Dark theme text color */
+  --border-color: rgba(128, 128, 128, 0.7); /* Dark theme border color */
+  --highlight-color: #ffffff; /* Dark theme heading line color */
+  --dropdown-background: #333333; /* Dark theme dropdown background */
+  --dropdown-text: #ffffff; /* Dark theme dropdown text color */
+  --placeholder-color: rgba(255, 255, 255, 0.5); /* Dark theme placeholder color */
+}
+
 .input-flex{
+  position:static;
   display: flex;
   width: 100%;
-   justify-content: flex-start;
+  justify-content: flex-start;
   align-items: center;
-  box-shadow: var(--shadow-box);
+  border: 0.5px solid rgba(128, 128, 128, 0.504);
   gap: 0.5rem;
   padding: 0rem 0.5rem;
   margin: 1rem 0.2rem;
   height: 2rem;
+  background-color: var(--background);
 }
+
 .input-flex input{
-  width: 70%;
+  width: 90%;
   padding: 0.22rem 0.2rem;
   margin: 1rem 0.3rem;
   border:none;
+  background-color: var(--background);
 }
+
 .input-flex img{
   width: 1.5rem;
   padding: 0.3rem;
@@ -23,32 +50,26 @@
 .input-flex input:focus{
   outline: none;
 }
-.inputandselect{
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  
-}
+
 .select-input{
 margin: 1rem 0.5rem;
-width: 15%;
-box-shadow: var(--shadow-box);
+width: 45%;
+position: relative;
 }
+
 .sorts{
   display: flex;
   align-items: center;
   margin: 0.75rem;
-  justify-content: flex-end;
+  margin-bottom: 2rem;
+  justify-content:space-between;
 }
 .heading{
   display: flex;
   justify-content: center;
-  font-family: 'Courier New', Courier, monospace;
   font-size: medium;
-  margin: 0;
-  text-decoration: underline;
-  text-decoration-thickness: 0.09rem ;
-  color: gray ;
+  color:black ;
+  font-weight: bolder;
 }
 .btn-blue {
   background-color: var(--theme);
@@ -60,3 +81,64 @@ box-shadow: var(--shadow-box);
   color: var(--theme) !important;
   transition: all 0.3s;
 }
+
+.input-radio {
+  margin-left: 10rem;
+  
+}
+
+/* Customize Select Component */
+.ant-select {
+  background: var(--background) !important;
+  color: var(--text-color) !important;
+  /* border: 1px solid var(--border-color) !important; */
+}
+
+.ant-select-selector {
+  background: var(--background) !important;
+  color: var(--text-color) !important;
+}
+
+.ant-select-arrow {
+  color: var(--text-color) !important;
+  
+}
+
+.ant-select-dropdown {
+  background: var(--dropdown-background) !important;
+  border-color: var(--border-color) !important;
+}
+
+.ant-select-item {
+  color: var(--dropdown-text) !important;
+}
+
+.ant-select-selection-placeholder {
+  color: var(--placeholder-color) !important;
+}
+
+.ant-select-item-option-active, .ant-select-item-option-selected {
+  background: var(--highlight-color) !important;
+  color: var(--background) !important;
+}
+
+/* Customize Radio Button */
+.ant-radio-button-wrapper {
+  background: var(--background) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-color) !important;
+}
+
+.ant-radio-button-wrapper-checked {
+  background: var(--highlight-color) !important;
+  border-color: var(--highlight-color) !important;
+  color: var(--background) !important;
+}
+
+.ant-radio-button-wrapper-checked:hover {
+  background: var(--highlight-color) !important;
+  border-color: var(--highlight-color) !important;
+  color: var(--background) !important;
+}
+
+

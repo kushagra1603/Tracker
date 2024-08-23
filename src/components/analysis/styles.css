@@ -1,7 +1,7 @@
-.input-flex{
+/* .input-flex{
   display: flex;
   width: 100%;
-   justify-content: flex-start;
+  justify-content: flex-start;
   align-items: center;
   box-shadow: var(--shadow-box);
   gap: 0.5rem;
@@ -10,7 +10,7 @@
   height: 2rem;
 }
 .input-flex input{
-  width: 70%;
+  width: 100%;
   padding: 0.22rem 0.2rem;
   margin: 1rem 0.3rem;
   border:none;
@@ -19,22 +19,23 @@
   width: 1.5rem;
   padding: 0.3rem;
   border: 0;
+  color: green;
  }
 .input-flex input:focus{
   outline: none;
 }
+
+.select-input{
+margin: 1rem 0.5rem;
+width: 45%;
+box-shadow: var(--shadow-box);
+}
 .inputandselect{
   width: 100%;
   display: flex;
-  justify-content: flex-start;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  
-}
-.select-input{
-margin: 1rem 0.5rem;
-width: 15%;
-box-shadow: var(--shadow-box);
+  justify-content: flex-end;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .analysissorts{
   display: flex;
@@ -46,10 +47,7 @@ box-shadow: var(--shadow-box);
 .heading{
   display: flex;
   justify-content: center;
-  font-family: 'Courier New', Courier, monospace;
   font-size: medium;
-  margin: 0;
-  text-decoration: underline;
-  text-decoration-thickness: 0.09rem ;
-  color: gray ;
-}
+  color:black ;
+  font-weight: bolder;
+} */
